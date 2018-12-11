@@ -1,0 +1,39 @@
+.container{
+  width: 1171px;
+  margin: 0 auto;
+}
+.listNext-enter-to {
+  transition: all 1s ease;
+  transform: translateX(0);
+}
+
+.listNext-leave-active {
+  transition: all 1s ease;
+  transform: translateX(-100%)
+}
+
+.listNext-enter {
+  transform: translateX(100%)
+}
+
+.listNext-leave {
+  transform: translateX(0)
+}
+
+.listPrev-enter-to {
+  transition: all 1s ease;
+  transform: translateX(0);
+}
+
+.listPrev-leave-active {
+  transition: all 1s ease;
+  transform: translateX(100%)
+}
+
+.listPrev-enter {
+  transform: translateX(-100%)
+}
+
+.listPrev-leave {
+  transform: translateX(0)
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mamibei",
+  "version": "1.0.0",
+  "description": "妈咪呗呗中心室内总面积3500平方米，是目前杭城屈指可数的高端月子中心，汲取台湾三十多年月子理念精髓，结合专业护理团队照护模式，科学膳食营养，产后修复体质定制管理、艺术修养课程等孕产期一站式服务。团队核心由台湾籍及大陆籍专家共同构成，为妈咪呗呗的专业护理和系统管理层层把关。 护理部、营养部、产后修复部、客服部、房务部、司机六大服务团队为一个家庭的细分服务模式，服务项目多达150多项，服务体现于细节，这是一对一模式所无法带来的高端体验",
+  "author": "pugbabu",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "PORT=3000 nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "koa": "^2.5.2",
+    "@nuxtjs/axios": "^5.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-lazyload": "^1.2.6"
+  }
+}
