@@ -22,6 +22,7 @@
       <div class="main">
         <!-- 服务介绍 -->
         <div class="service-content">
+          <div class="milk-bottle"></div>
           <div class="service-left">
             <h3>全方位专业月子照护享受为人母的幸福</h3>
             <p>宝宝照护</p>
@@ -147,90 +148,6 @@
       <!-- 绳子 -->
       <div class="rope-bottom"></div>
     </div>
-
-    <!-- 服务介绍 -->
-    <!-- <div class="part-one">
-      <team v-if="num === 0"></team>
-      <baby-attend v-if="num === 1"></baby-attend>
-      <mother-attend v-if="num === 2"></mother-attend>
-      <birth-care v-if="num === 3"></birth-care>
-      <funny-course v-if="num === 4"></funny-course>
-      <section class="service">
-        <ul class="container service-list clearfix">
-          <li class="service-item fl" v-for="(item, index) in serviceList" :key="index" :class="{'service-active':index == num}" @click="tab(index)">
-            <img v-lazy="item.src"/>
-            <div class="title">{{item.title}}</div>
-          </li>
-        </ul>
-        <div class="more-btn">了解更多</div>
-      </section>
-    </div>-->
-    <!-- 空间介绍 -->
-    <!-- <section class="space">
-      <section class="space-bg"></section>
-      <section class="space-box">
-        <div class="container space-info">
-          <h3>台湾ISD创意空间设计，专注产后休养的艺术大厅</h3>
-          <p>呼吸每一口清新空气，触碰每一寸典雅艺术</p>
-          <p>专业休养环境从设计开始，搭建独属妈妈与宝宝的专属生活空间</p>
-          <p>每家门店都有独特的风格，享受游走艺术空间的美，滋养身心，解放心灵</p>
-          <div class="space-container">
-            <transition-group tag="div" name="listNext" v-show="isLeft">
-              <div class="space-slide" v-for="(item, index) in spaceList"
-                v-show="index === spaceIndex"
-              :key="index">
-                <img :src="item.src" />
-              </div>
-            </transition-group>
-            <transition-group tag="div" name="listPrev" v-show="!isLeft">
-              <div class="space-slide" v-for="(item, index) in spaceList"
-                v-show="index === spaceIndex"
-              :key="index">
-                <img :src="item.src" />
-              </div>
-            </transition-group>
-            
-          </div>
-          <div class="btn-pre" @click="handlePrev"><</div>
-          <div class="btn-next" @click="handleNext">></div>
-          <div class="more-btn">了解更多 ></div>
-        </div>
-      </section>
-    </section>-->
-    <!-- 月子料理 -->
-    <!-- <section class="birth-food">
-      <div class="container food-wrapper">
-        <div class="food-info">
-          <h3>创意月子料理<br>台湾大厨定制舌尖上的美味</h3>
-          <p class="foot-tip">私人定制</p>
-          <p>台湾主厨每周沟通，仔细询问产妇身体状态、口味、乳汁分泌量等定制膳食，<br>做到发奶不发福。</p>
-          <div class="more-btn">了解更多 ></div>
-        </div>
-        <div class="food-images">
-          <transition-group tag="div" name="listNext">
-            <div class="food-slide" v-for="(item, index) in foodList" :key="index" v-show="index === foodIndex" @mouseenter="stop" @mouseleave="go">
-              <img :src="item.src" />
-            </div>
-          </transition-group>
-        </div>
-        <ul class="food-dot">
-          <li class="food-dot-item"  v-for="(item, index) in foodList" :key="index" :class="{'food-dot-item-active': index === foodIndex}" @click="change(index)"></li>
-        </ul>
-      </div>
-    </section>-->
-    <!-- 宝妈见证 -->
-    <!-- <section class="mother-witness">
-      <div class="container witness-container">
-        <h3>宝妈见证</h3>
-        <p>呗家妈妈的精彩故事，经历了一个月的女王享受，让呗家妈妈为大家讲述她们所遇到的幸福故事</p>
-        <ul class="witness-story"></ul>
-        <div class="more-btn">阅读更多 ></div>
-      </div>
-    </section>-->
-    <!-- 我们的数据 -->
-    <!-- <section class="us-data">
-      <div class="container data-container"></div>
-    </section>-->
   </div>
 </template>
 
@@ -406,26 +323,49 @@ export default {
 // 主体区域
 .content {
   background: #f1f2f4;
+  height: 4071px;
   box-shadow: inset 3px 6px 5px -5px #c1c1c3;
+  position: relative;
   .rope-top,.rope-bottom {
     background: url("../assets/image/home/rope.png") no-repeat center;
     width: 576px;
     height: 150px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    z-index: 100;
   }
   .rope-bottom{
-    margin-top: 52px;
+    // margin-top: 52px;
+    bottom: 0;
+    z-index: 8;
   }
   .main {
     width: 784px;
     height: 3719px;
-    margin: 0 auto;
+    top: 139px;
+    // margin: 0 auto;
     background: #fbe1e0;
-    box-shadow: inset 0 2px 6px 0 #000000;
-    position: relative;
+    box-shadow: inset 0 2px 6px 0 #ced2d3;
+    // position: relative;
+    position: absolute;
+    left: 50%;
+    margin-left: -392px;
+    z-index: 99;
+
 
     // 服务介绍
     .service-content {
+      .milk-bottle{
+        position: absolute;
+        width: 320px;
+        height: 402px;
+        left: -165px;
+        top: 192px;
+        background: url('../assets/image/home/naiping.png') no-repeat center;
+        background-size: 100%;
+      }
       .service-left {
         position: absolute;
         left: 43px;
@@ -513,6 +453,7 @@ export default {
         color: rgba(45, 58, 75, 1);
         line-height: 50px;
         margin-top: 42px;
+        cursor: pointer;
       }
     }
 
