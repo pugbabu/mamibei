@@ -1,21 +1,21 @@
 <!-- 头部组件 -->
 <template>
   <div class="v-header" ref="header">
-    <div class="header-container clearfix">
-      <nuxt-link to="/" class="fl logo">
-        <img src="~/assets/image/home/logo.png" alt="妈咪呗" class="logo-img">
+    <div class="header-container">
+      <nuxt-link to="/" class=" logo">
+        <!-- <img src="~/assets/image/home/logo.png" alt="妈咪呗" class="logo-img"> -->
       </nuxt-link>
-      <ul class="nav-list fl">
+      <ul class="nav-list ">
         <li
           v-for="(item, index) in items"
           :key="index"
-          class="nav-item link-item"
+          class="nav-item link-item fl"
           :class="{'nav-item-active': item.route == $route.path}"
         >
           <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
         </li>
       </ul>
-       <div class="contact-btn text-center fl">联系我们</div>
+       <div class="contact-btn text-center">联系我们</div>
     </div>
     
   </div>
@@ -69,21 +69,25 @@ export default {
   left: 0;
   right: 0;
   z-index: 99999;
-  height: 100px;
+  height: 70px;
   background: transparent;
   .header-container {
     height: 100%;
     margin: auto;
     position: relative;
+    text-align: center;
   }
   .logo{
     margin-top: 24px;
+    display: inline-block;
   }
   .logo-img{
     width: 45px;
     height: 42px;
   }
   .contact-btn{
+    display: inline-block;
+
     height:40px;
     background:rgba(255,255,255,1);
     border-radius:100px;
@@ -96,12 +100,12 @@ export default {
     cursor: pointer;
     text-align: center;
     margin-top: 25px;
-    margin-left: 378px;
+    // margin-left: 378px;
 
   }
 }
   .nav-list {
-    display: flex;
+    display: inline-block;
     margin-left: 155px;
     .nav-item{
       height: 100%;

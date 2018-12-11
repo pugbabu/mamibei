@@ -8,7 +8,7 @@
         <div class="more">了解更多</div>
       </div>
     </section>
-    <v-banner :bannerData="bannerData"></v-banner>
+    <!-- <v-banner :bannerData="bannerData"></v-banner> -->
     
   </div>
 </template>

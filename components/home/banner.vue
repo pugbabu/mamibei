@@ -2,7 +2,7 @@
 <template>
   <div id="index-banner">
     <div class="banner-container container">
-      <transition-group tag="div" class="banner-box" name="listNext" v-show="isLeft">
+      <!-- <transition-group tag="div" class="banner-box" name="listNext" v-show="isLeft">
         <div class="banner-item" v-for="(item, index) in bannerData" :key="index" v-show="index === currentIndex" @mouseenter="stop" @mouseleave="go">
           <nuxt-link :to="item.url" target="_blank">
             <h3 v-html="item.title"></h3>
@@ -10,7 +10,7 @@
             <img :src="item.src"/>
           </nuxt-link>
         </div>
-      </transition-group>
+      </transition-group> -->
       <ul class="banner-dot">
         <li class="dot-item" v-for="(item,index) in bannerData" :key="index" :class="{active: index === currentIndex}" @click="change(index)"></li>
       </ul>

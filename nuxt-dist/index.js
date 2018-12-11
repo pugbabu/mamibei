@@ -7,13 +7,12 @@ import NuxtLink from './components/nuxt-link.js'
 import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
-import { setContext, getLocation, getRouteData } from './utils'
-
+import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
+
 import nuxt_plugin_vuelazyload_d07c1d40 from 'nuxt_plugin_vuelazyload_d07c1d40' // Source: ../plugins/vue-lazyload.js (ssr: false)
 import nuxt_plugin_swiperplugin_afcc4376 from 'nuxt_plugin_swiperplugin_afcc4376' // Source: ../plugins/swiper-plugin.js (ssr: false)
-
 
 // Component: <no-ssr>
 Vue.component(NoSSR.name, NoSSR)
@@ -37,21 +36,20 @@ Vue.use(Meta, {
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp (ssrContext) {
+async function createApp(ssrContext) {
   const router = await createRouter(ssrContext)
 
-  
-
   // Create Root instance
+
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
     router,
-    
+
     nuxt: {
       defaultTransition,
       transitions: [ defaultTransition ],
-      setTransitions (transitions) {
+      setTransitions(transitions) {
         if (!Array.isArray(transitions)) {
           transitions = [ transitions ]
         }
@@ -70,21 +68,21 @@ async function createApp (ssrContext) {
       },
       err: null,
       dateErr: null,
-      error (err) {
+      error(err) {
         err = err || null
         app.context._errored = !!err
-        if (typeof err === 'string') err = { statusCode: 500, message: err }
+        err = err ? normalizeError(err) : null
         const nuxt = this.nuxt || this.$options.nuxt
         nuxt.dateErr = Date.now()
         nuxt.err = err
-        // Used in lib/server.js
+        // Used in src/server.js
         if (ssrContext) ssrContext.nuxt.error = err
         return err
       }
     },
     ...App
   }
-  
+
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -100,7 +98,7 @@ async function createApp (ssrContext) {
     route,
     next,
     error: app.nuxt.error.bind(app),
-    
+
     payload: ssrContext ? ssrContext.payload : undefined,
     req: ssrContext ? ssrContext.req : undefined,
     res: ssrContext ? ssrContext.res : undefined,
@@ -109,11 +107,11 @@ async function createApp (ssrContext) {
 
   const inject = function (key, value) {
     if (!key) throw new Error('inject(key, value) has no key provided')
-    if (!value) throw new Error('inject(key, value) has no value provided')
+    if (typeof value === 'undefined') throw new Error('inject(key, value) has no value provided')
     key = '$' + key
     // Add into app
     app[key] = value
-    
+
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
     if (Vue[installKey]) return
@@ -122,7 +120,7 @@ async function createApp (ssrContext) {
     Vue.use(() => {
       if (!Vue.prototype.hasOwnProperty(key)) {
         Object.defineProperty(Vue.prototype, key, {
-          get () {
+          get() {
             return this.$root.$options[key]
           }
         })
@@ -130,12 +128,9 @@ async function createApp (ssrContext) {
     })
   }
 
-  
-
   // Plugin execution
-  
-  
-  if (process.client) { 
+
+  if (process.client) {
     if (typeof nuxt_plugin_vuelazyload_d07c1d40 === 'function') await nuxt_plugin_vuelazyload_d07c1d40(app.context, inject)
     if (typeof nuxt_plugin_swiperplugin_afcc4376 === 'function') await nuxt_plugin_swiperplugin_afcc4376(app.context, inject)
   }
@@ -159,8 +154,8 @@ async function createApp (ssrContext) {
 
   return {
     app,
-    router,
-    
+
+    router
   }
 }
 
