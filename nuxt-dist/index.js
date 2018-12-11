@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 /* Plugins */
 import nuxt_plugin_vuelazyload_d07c1d40 from 'nuxt_plugin_vuelazyload_d07c1d40' // Source: ../plugins/vue-lazyload.js (ssr: false)
+import nuxt_plugin_swiperplugin_afcc4376 from 'nuxt_plugin_swiperplugin_afcc4376' // Source: ../plugins/swiper-plugin.js (ssr: false)
 
 
 // Component: <no-ssr>
@@ -136,6 +137,7 @@ async function createApp (ssrContext) {
   
   if (process.client) { 
     if (typeof nuxt_plugin_vuelazyload_d07c1d40 === 'function') await nuxt_plugin_vuelazyload_d07c1d40(app.context, inject)
+    if (typeof nuxt_plugin_swiperplugin_afcc4376 === 'function') await nuxt_plugin_swiperplugin_afcc4376(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

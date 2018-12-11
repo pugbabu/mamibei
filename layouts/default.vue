@@ -23,7 +23,5 @@ export default {
 <style lang="scss" scoped>
 .content-container {
   width: 100%;
-  margin-top: 100px;
-
 }
 </style>

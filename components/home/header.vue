@@ -1,6 +1,6 @@
 <!-- 头部组件 -->
 <template>
-  <div class="v-header">
+  <div class="v-header" ref="header">
     <div class="header-container clearfix">
       <nuxt-link to="/" class="fl logo">
         <img src="~/assets/image/home/logo.png" alt="妈咪呗" class="logo-img">
@@ -26,6 +26,7 @@ export default {
   data() {
     return {
       activeInd: 0,
+      initRatio: 0,
        items: [
         { route: '/', title: '关于我们' },
         { route: '/attend', title: '专业照护' },
@@ -36,13 +37,27 @@ export default {
       ]
     };
   },
+  mounted () {
+    window.addEventListener('scroll', this.headAnima, false);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.headAnima, false);
+  },
   methods: {
     goTo(item, index) {
       this.activeInd = index;
       this.$router.push({
         path: item.route
       })
+    },
+    headAnima() {
+      var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+      this.initRatio = scrollTop/100;
+      // console.log(this.initRatio)
+      this.$refs.header.style.background = 'rgba(255,255,255,'+this.initRatio+')';
+
     }
+
   }
 };
 </script>

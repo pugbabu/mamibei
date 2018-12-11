@@ -42,13 +42,15 @@ module.exports = {
   */
   css: [
     '~/assets/scss/index.scss',
+    'swiper/dist/css/swiper.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~/plugins/vue-lazyload.js', ssr: false}
+    {src: '~/plugins/vue-lazyload.js', ssr: false},
+    {src: '~/plugins/swiper-plugin.js', ssr: false}
   ],
 
   //设置缓存
