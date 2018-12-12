@@ -1,11 +1,11 @@
 <!-- 头部组件 -->
 <template>
   <div class="v-header" ref="header">
-    <div class="header-container">
-      <nuxt-link to="/" class=" logo">
-        <!-- <img src="~/assets/image/home/logo.png" alt="妈咪呗" class="logo-img"> -->
+    <div class="header-container clearfix">
+      <nuxt-link to="/" class="fl logo">
+        <img src="~/assets/image/home/logo.png" alt="妈咪呗" class="logo-img">
       </nuxt-link>
-      <ul class="nav-list ">
+      <ul class="nav-list fl">
         <li
           v-for="(item, index) in items"
           :key="index"
@@ -15,7 +15,7 @@
           <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
         </li>
       </ul>
-       <div class="contact-btn text-center">联系我们</div>
+       <div class="contact-btn text-center fr">联系我们</div>
     </div>
     
   </div>
@@ -72,21 +72,45 @@ export default {
   height: 70px;
   background: transparent;
   .header-container {
+    width: 1380px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     text-align: center;
+    box-sizing: border-box;
   }
   .logo{
-    margin-top: 24px;
-    display: inline-block;
+    margin-top: 15px;
+    // display: inline-block;
   }
   .logo-img{
     width: 45px;
     height: 42px;
   }
+  .nav-list {
+    // display: inline-block;
+    margin-left: 155px;
+    line-height: 70px;
+    .nav-item{
+      // height: 100%;
+      width:72px;
+      // height:18px;
+      font-size:18px;
+      font-family:Helvetica;
+      color:rgba(45,58,75,1);
+      // line-height:22px;
+      // margin-top: 36px;
+      margin-right: 50px;
+      -webkit-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+    }
+    .nav-item-active{
+      color:rgba(233,83,106,1);
+    }
+  }
   .contact-btn{
-    display: inline-block;
+    // display: inline-block;
 
     height:40px;
     background:rgba(255,255,255,1);
@@ -99,30 +123,10 @@ export default {
     line-height:40px;
     cursor: pointer;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
     // margin-left: 378px;
 
   }
 }
-  .nav-list {
-    display: inline-block;
-    margin-left: 155px;
-    .nav-item{
-      height: 100%;
-      width:72px;
-      height:18px;
-      font-size:18px;
-      font-family:Helvetica;
-      color:rgba(45,58,75,1);
-      line-height:22px;
-      margin-top: 36px;
-      margin-right: 50px;
-      -webkit-transition: all 0.3s ease;
-	    -o-transition: all 0.3s ease;
-	    transition: all 0.3s ease;
-    }
-    .nav-item-active{
-      color:rgba(233,83,106,1);
-    }
-  }
+
 </style>

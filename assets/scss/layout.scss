@@ -55,3 +55,32 @@ img[lazy=error] {
  left: 50%;
  transform: translate3d(-50%,-50%,0) scale(0.5);
 }
+// .swiper-pagination-bullet{
+//   width:  10px !important;
+//   height:  10px !important;
+//   margin-right: 5px !important;
+//   background:  #fff !important;
+//   border-radius:  50%;
+//   cursor:  pointer;
+// }
+// .swiper-pagination-bullet-active{
+//   background: #eb5168 !important;
+// }
+.my-pagination-clickable span[role=button]{
+  border: none;
+  outline: none;
+
+}
+.my-bullet{
+  display: inline-block;
+  width:  10px !important;
+  height:  10px !important;
+  margin-right: 5px !important;
+  background:  #fff !important;
+  border-radius:  50%;
+  cursor:  pointer;
+}
+.my-bullet-active{
+  background: #eb5168 !important;
+  border: none;
+}

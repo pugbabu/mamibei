@@ -2,11 +2,15 @@
 <template>
   <div class="home-page">
     <!-- 首页轮播图 -->
+    <div class="banner-text">
+      <h1>专业，体现在服务的方方面面<br>五大专业部门，24小时贴心照护</h1>
+      <p>实施台式全面、专业、科学、系统的护理标准，护理人员必备国家护士资格证书、<br>公立医院临床经验，入职前参加产后护理知识相关知识课程培训。</p>
+    </div>
     <div v-swiper:mySwiper="swiperOption" class="banner">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(banner,index) in banners" :key="index">
-          <div class="item">轮播图{{index + 1}}</div>
-          <!-- <img v-lazy="banner"> -->
+          <!-- <div class="item">轮播图{{index + 1}}</div> -->
+          <img v-lazy="banner">
         </div>
       </div>
       <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
@@ -27,9 +31,20 @@
             <h3>全方位专业月子照护享受为人母的幸福</h3>
             <p>宝宝照护</p>
             <p>用科学的护理专业，温馨守护新生软萌宝宝</p>
+            <div class="swiper-pagination" style="margin-top:68px;"></div>
+            <!-- <ul class="dot">
+              <li class="dot-item" v-for="(item,index) in serviceList" :key="index" :class="{active: index === serviceInd}" @click="changeService(index)"></li>
+            </ul> -->
           </div>
           <div class="service-right">
-            <img src="~/assets/image/home/service1.png">
+            <div v-swiper:mySwiper1="serviceOption" class="service-banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="(item, index) in serviceList" :key="index">
+                  <img :data-src="item.src" class="swiper-lazy">
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="service-list">
@@ -69,7 +84,22 @@
             <p>每家门店都有独特的风格，享受游走艺术空间的美</p>
             <p>滋养身心，解放心灵</p>
           </div>
-          <div class="space-right"></div>
+          <div class="space-right">   
+            <div v-swiper:mySwiper2="spaceOption" class="space-banner">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" v-for="(item, index) in serviceList" :key="index">
+                    <img :data-src="item.src" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+               </div>
+                
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <div class="swiper-pagination" style="right:177px;bottom:28px;"></div>
+
         </div>
 
         <!-- 料理 -->
@@ -161,7 +191,13 @@ import FunnyCourse from "../components/home/funnyCourse";
 export default {
   data() {
     return {
+      serviceInd: 0,
       swiperOption: {
+        speed:1000,
+        effect : 'fade',
+        fadeEffect: {
+          crossFade: false,
+        },
         autoplay: {
           delay: 4000, // 切换时间
           stopOnLastSlide: false, // 是否停止在最后一张
@@ -175,62 +211,88 @@ export default {
           prevEl: ".swiper-button-prev"
         }
       },
+      serviceOption: {
+        pagination: {
+          el: ".swiper-pagination",
+          bulletClass : 'my-bullet',
+          bulletActiveClass: 'my-bullet-active',
+          clickable :true,
+          clickableClass : 'my-pagination-clickable',
+        },
+        autoplay: true,
+        loop : true,
+        speed:1000,
+        lazy: {
+          loadPrevNext: true,
+        },
+      },
+      spaceOption: {
+        pagination: {
+          el: ".swiper-pagination",
+          bulletClass : 'my-bullet',
+          bulletActiveClass: 'my-bullet-active',
+          clickable :true,
+          clickableClass : 'my-pagination-clickable',
+        },
+        autoplay: true,
+        loop : true,
+        speed:1000,
+        lazy: {
+          loadPrevNext: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
       banners: [
         {
-          src: require("~/assets/image/home/banner-bg1.png")
+          // src: require("~/assets/image/home/banner-bg1.png")
+          src: 'http://pjm95ro2m.bkt.clouddn.com/banner-bg1.png'
         },
         {
-          src: require("~/assets/image/attend1.jpg")
+          // src: require("~/assets/image/attend1.jpg")
+          src: 'http://pjm95ro2m.bkt.clouddn.com/attend1.jpg'
+
         },
         {
-          src: require("~/assets/image/attend2.jpg")
+          // src: require("~/assets/image/attend2.jpg")
+          src: 'http://pjm95ro2m.bkt.clouddn.com/attend2.jpg'
+
         }
       ],
       serviceList: [
         {
-          src: require("~/assets/image/service1.png"),
-          title: "专家团队"
+          // src: require("~/assets/image/index-food1.jpeg"),
+          src: 'http://pjm95ro2m.bkt.clouddn.com/index-food1.jpeg',
+          title: "专家团队",
+          id: 1,
         },
         {
-          src: require("~/assets/image/service2.png"),
-          title: "宝宝照护"
+          // src: require("~/assets/image/index-food2.jpeg"),
+          src: 'http://pjm95ro2m.bkt.clouddn.com/index-food2.jpeg',
+
+          title: "宝宝照护",
+          id: 2,
+
         },
         {
-          src: require("~/assets/image/service3.png"),
-          title: "妈妈照护"
+          // src: require("~/assets/image/index-food3.jpeg"),
+          src: 'http://pjm95ro2m.bkt.clouddn.com/index-food3.jpeg',
+          title: "妈妈照护",
+          id: 3,
+
         },
-        {
-          src: require("~/assets/image/service4.png"),
-          title: "产后护理"
-        },
-        {
-          src: require("~/assets/image/service5.png"),
-          title: "趣味课程"
-        }
+        // {
+        //   src: require("~/assets/image/service4.png"),
+        //   title: "产后护理"
+        // },
+        // {
+        //   src: require("~/assets/image/service5.png"),
+        //   title: "趣味课程"
+        // }
       ],
       num: 0,
-      spaceList: [
-        {
-          src: require("~/assets/image/index-space1.jpeg")
-        },
-        {
-          src: require("~/assets/image/index-space2.jpeg")
-        },
-        {
-          src: require("~/assets/image/index-space3.jpeg")
-        }
-      ],
-      foodList: [
-        {
-          src: require("~/assets/image/index-food1.jpeg")
-        },
-        {
-          src: require("~/assets/image/index-food2.jpeg")
-        },
-        {
-          src: require("~/assets/image/index-food3.jpeg")
-        }
-      ],
       spaceIndex: 0,
       clickTime: "",
       isLeft: true,
@@ -281,7 +343,7 @@ export default {
       }
     },
     change(index) {
-      this.foodIndex = index;
+      this.serviceInd = index;
     },
     go() {
       this.timer = setInterval(() => {
@@ -293,16 +355,45 @@ export default {
       this.timer = null;
     },
     autoPlay() {
-      this.foodIndex++;
-      if (this.foodIndex > this.foodList.length - 1) {
-        this.foodIndex = 0;
+      this.serviceInd++;
+      if (this.serviceInd > this.serviceList.length - 1) {
+        this.serviceInd = 0;
       }
-    }
+    },
+    
   }
 };
 </script>
 
 <style lang='scss' scoped>
+// 轮播上的文字
+.banner-text{
+  width: 1380px;
+  position: absolute;
+  top: 287px;
+  padding-left: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2D3A4B;
+  font-size: 30px;
+  z-index: 101;
+  box-sizing: border-box;
+  h1{
+    font-size:48px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(45,58,75,1);
+    margin-bottom: 50px;
+  }
+  p{
+    width:567px;
+    font-size:21px;
+    font-family:Helvetica;
+    color:#2D3A4B;
+    line-height:32px;
+  }
+}
+
 // 轮播
 .banner {
   width: 100%;
@@ -324,10 +415,10 @@ export default {
 .content {
   background: #f1f2f4;
   height: 4071px;
-  box-shadow: inset 3px 6px 5px -5px #c1c1c3;
+  box-shadow: inset 3px 11px 5px -5px #c1c1c3;
   position: relative;
   .rope-top,.rope-bottom {
-    background: url("../assets/image/home/rope.png") no-repeat center;
+    background: url("http://pjm95ro2m.bkt.clouddn.com/rope.png") no-repeat center;
     width: 576px;
     height: 150px;
     // margin: 0 auto;
@@ -363,7 +454,7 @@ export default {
         height: 402px;
         left: -165px;
         top: 192px;
-        background: url('../assets/image/home/naiping.png') no-repeat center;
+        background: url('http://pjm95ro2m.bkt.clouddn.com/naiping.png') no-repeat center;
         background-size: 100%;
       }
       .service-left {
@@ -373,7 +464,8 @@ export default {
         width: 415px;
         height: 349px;
         background: #4b5964;
-        border-radius: 10px  0px  0px  10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         color: #ffffff;
         padding-left: 27px;
         box-sizing: border-box;
@@ -402,6 +494,20 @@ export default {
         height: 477px;
         top: 159px;
         left: 458px;
+        .service-banner{
+          width: 100%;
+          height: 100%;
+          .swiper-slide{
+            width: 100%;
+            position: relative;
+            height: 100%;
+            img{
+              display: block;
+              width:100%;
+              height:100%;
+            }
+          }
+        }
       }
     }
     .service-list {
@@ -424,7 +530,7 @@ export default {
         margin-right: 30px;
         .image {
           height: 101px;
-          background: url("../assets/image/home/service-icon.png") no-repeat
+          background: url("http://pjm95ro2m.bkt.clouddn.com/service-icon.png") no-repeat
             center top;
           background-size: 67px 67px;
         }
@@ -487,7 +593,7 @@ export default {
         .icon {
           width: 72px;
           height: 15px;
-          background: url("../assets/image/home/text-icon.png") no-repeat center;
+          background: url("http://pjm95ro2m.bkt.clouddn.com/text-icon.png") no-repeat center;
           background-size: 100%;
           margin: 0 auto;
           margin-top: 7px;
@@ -512,10 +618,45 @@ export default {
       .space-right {
         width: 502px;
         height: 482px;
-        background: red;
+        // background: red;
         position: absolute;
         top: -35px;
         right: -39px;
+        .space-banner{
+          width: 100%;
+          height: 100%;
+          .swiper-slide{
+            width: 100%;
+            position: relative;
+            height: 100%;
+            img{
+              display: block;
+              width:100%;
+              height:100%;
+            }
+          }
+        }
+        .swiper-button-next{
+          width:48px;
+          height:48px;
+          background-image: url('http://pjm95ro2m.bkt.clouddn.com/arrow-right.png') !important;
+          background-size: 100%;
+          right:-25px;
+          z-index: 9999 !important;
+          outline: none;
+        }
+        .swiper-button-prev{
+          width:48px;
+          height:48px;
+          background-image: url('http://pjm95ro2m.bkt.clouddn.com/arrow-left.png') !important;
+          background-size: 100%;
+          left:-25px;
+          z-index: 9999 !important;
+          outline: none;
+
+
+
+        }
       }
     }
 
@@ -559,7 +700,7 @@ export default {
         .icon {
           width: 72px;
           height: 15px;
-          background: url("../assets/image/home/text-icon.png") no-repeat center;
+          background: url("http://pjm95ro2m.bkt.clouddn.com/text-icon.png") no-repeat center;
           background-size: 100%;
           margin: 0 auto;
           margin-top: 18px;
@@ -576,7 +717,7 @@ export default {
         }
       }
       .food-right {
-        background: url("../assets/image/home/food.png") no-repeat center;
+        background: url("http://pjm95ro2m.bkt.clouddn.com/food.png") no-repeat center;
         background-size: 100%;
         width: 815px;
         height: 445px;
@@ -586,7 +727,7 @@ export default {
         z-index: 98;
       }
       .food-fruit {
-        background: url("../assets/image/home/fruit.png") no-repeat center;
+        background: url("http://pjm95ro2m.bkt.clouddn.com/fruit.png") no-repeat center;
         background-size: 100%;
         width: 352px;
         height: 302px;
@@ -655,6 +796,7 @@ export default {
           border-radius: 10px;
           float: left;
           margin-right: 72px;
+          cursor: pointer;
           .image{
             width: 320px;
             height: 217px;
@@ -676,13 +818,13 @@ export default {
             }
           }
           .image1{
-            background: url('../assets/image/home/witness1.png') no-repeat center;
+            background: url('http://pjm95ro2m.bkt.clouddn.com/witness1.png') no-repeat center;
           }
           .image2{
-            background: url('../assets/image/home/witness2.png') no-repeat center;
+            background: url('http://pjm95ro2m.bkt.clouddn.com/witness2.png') no-repeat center;
           }
           .image3{
-            background: url('../assets/image/home/witness3.png') no-repeat center;
+            background: url('http://pjm95ro2m.bkt.clouddn.com/witness3.png') no-repeat center;
           }
           .text{
             width: 320px;
@@ -715,6 +857,11 @@ export default {
         .item:last-child{
           margin-right: 0;
         }
+        .item:hover{
+          .image{
+            background-size:120%; 
+          }
+        }
       }
     }
 
@@ -741,13 +888,13 @@ export default {
 
         }
         .image1{
-          background: url('../assets/image/home/data1.png') no-repeat center;
+          background: url('http://pjm95ro2m.bkt.clouddn.com/data1.png') no-repeat center;
         }
         .image2{
-          background: url('../assets/image/home/data2.png') no-repeat center;
+          background: url('http://pjm95ro2m.bkt.clouddn.com/data2.png') no-repeat center;
         }
         .image3{
-          background: url('../assets/image/home/data3.png') no-repeat center;
+          background: url('http://pjm95ro2m.bkt.clouddn.com/data3.png') no-repeat center;
         }
         .num{
           height:36px;
@@ -771,273 +918,5 @@ export default {
   }
 }
 
-// 服务
-.service {
-  background: #ffffff;
-  width: 100%;
-  height: 497px;
-  .service-list {
-    padding: 0 30px;
-    padding-top: 125px;
-    .service-item {
-      width: 20%;
-      text-align: center;
-      cursor: pointer;
-      img {
-        display: inline-block;
-        width: 146px;
-        height: 124px;
-      }
-      .title {
-        font-size: 16px;
-        color: #444a53;
-        line-height: 28px;
-        margin-top: 35px;
-      }
-    }
-    .service-item:hover {
-      .title {
-        color: #ea546b;
-      }
-    }
-    .service-active {
-      .title {
-        color: #ea546b;
-      }
-    }
-  }
-  .more-btn {
-    width: 140px;
-    height: 40px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 40px;
-    font-size: 12px;
-    color: #fff;
-    background: #ea546b;
-    border-radius: 20px;
-    margin-top: 75px;
-    cursor: pointer;
-  }
-}
 
-// 空间
-.space {
-  .space-bg {
-    width: 100%;
-    height: 680px;
-    background: url("../assets/image/index-space.png") no-repeat center;
-    background-size: 100%;
-  }
-  .space-box {
-    background: #ffffff;
-  }
-  .space-info {
-    text-align: center;
-    padding-top: 60px;
-    position: relative;
-    padding-bottom: 68px;
-
-    h3 {
-      font-size: 36px;
-      line-height: 46px;
-      color: #252525;
-      margin-bottom: 95px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 26px;
-      color: #717171;
-    }
-    .space-container {
-      margin-top: 62px;
-      margin-bottom: 65px;
-      position: relative;
-      display: inline-block;
-      width: 700px;
-      height: 408px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 6px 9px 13px 8px #d7d7d7;
-      .space-slide {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        img {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-    .btn-pre,
-    .btn-next {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: #ea546b;
-      position: absolute;
-      top: 527px;
-      line-height: 50px;
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .btn-pre {
-      left: 110px;
-    }
-    .btn-next {
-      right: 110px;
-    }
-    .more-btn {
-      width: 200px;
-      cursor: pointer;
-      font-size: 14px;
-      color: #ea546b;
-      line-height: 24px;
-      margin: 0 auto;
-    }
-  }
-}
-
-// 月子料理
-.birth-food {
-  height: 680px;
-  background: url("../assets/image/index-food.jpeg") no-repeat center;
-  width: 100%;
-  background-size: 100% 100%;
-  .food-wrapper {
-    position: relative;
-    height: 100%;
-    .food-info {
-      padding-left: 40px;
-      padding-top: 80px;
-      position: absolute;
-      left: 0;
-      top: 96px;
-      z-index: 99;
-      width: 675px;
-      height: 484px;
-      background: #fff;
-      border-radius: 20px;
-      box-sizing: border-box;
-      h3 {
-        font-size: 36px;
-        line-height: 46px;
-        color: #2e2e2e;
-      }
-      .foot-tip {
-        font-size: 18px;
-        color: #ea546b;
-        line-height: 28px;
-        margin-top: 85px;
-        font-weight: 500;
-      }
-      p {
-        margin-top: 8px;
-        font-size: 14px;
-        color: #9c9c9c;
-        line-height: 28px;
-      }
-      .more-btn {
-        width: 160px;
-        height: 40px;
-        background: #ea546b;
-        font-size: 14px;
-        color: #fff;
-        line-height: 40px;
-        text-align: center;
-        border-radius: 120px;
-        margin-top: 60px;
-        font-weight: 500;
-      }
-    }
-    .food-images {
-      position: absolute;
-      z-index: 100;
-      width: 606px;
-      height: 400px;
-      right: 0;
-      top: 138px;
-      overflow: hidden;
-      border-radius: 5px;
-      .food-slide {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        img {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-    .food-dot {
-      position: absolute;
-      z-index: 101;
-      bottom: 102px;
-      right: 232px;
-      text-align: center;
-      .food-dot-item {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin-right: 19px;
-        background: #fff;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-      .food-dot-item-active {
-        background: #ea546b;
-      }
-    }
-  }
-}
-
-// 宝妈见证
-.mother-witness {
-  width: 100%;
-  height: 734px;
-  background: #fff;
-  .witness-container {
-    text-align: center;
-    padding-top: 60px;
-    h3 {
-      font-size: 32px;
-      color: #2e2e2e;
-      font-weight: bold;
-      line-height: 42px;
-    }
-    p {
-      font-size: 16px;
-      color: #919191;
-      font-weight: 500;
-      line-height: 26px;
-      margin-top: 60px;
-    }
-    .witness-story {
-      margin-top: 80px;
-      height: 350px;
-      width: 100%;
-    }
-    .more-btn {
-      width: 200px;
-      cursor: pointer;
-      font-size: 14px;
-      color: #ea546b;
-      line-height: 24px;
-      margin: 0 auto;
-      margin-top: 35px;
-    }
-  }
-}
-
-// 数据
-.us-data {
-  height: 334px;
-  background: #fbe1e0;
-}
 </style>
