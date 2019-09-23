@@ -1,0 +1,503 @@
+.mendian-container{
+  .session1{
+    width:989px;
+    height:428px;
+    border-radius: 10px;
+    background: #66C3C3;
+    box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0 rgba(0,0,0,0.22);
+    position: relative;
+    left: -67px;
+    margin-top: 163px;
+    .info{
+      width:916px;
+      height:428px;
+      position: absolute;
+      left: -66px;
+      top: -72px;
+      background: #fff;
+      box-sizing: border-box;
+      padding-left: 41px;
+      padding-top: 43px;
+      border-radius: 10px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+      h3{
+        font-size:24px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:38px;
+        // animation: zoomIn 0.8s linear;   
+
+      }
+      .icon{
+        display: inline-block;
+        width: 72px;
+        height: 15px;
+        background: url("../../assets/image/home/text-icon.png") no-repeat center;
+        background-size: 100%;
+        margin-top: 20px;
+       
+      }
+      p{
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(45,58,75,1);
+        line-height:30px;
+      }
+    }
+  }
+  .session2{
+    width:845px;
+    height:459px;
+    position: relative;
+    margin-top: 122px;
+    left: -30px;
+    .space-banner{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        background: #4B5964;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        line-height: 482px;
+      }
+     
+    }
+    .swiper-button-next{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-right.png') !important;
+      background-size: 100%;
+      right:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+    .swiper-button-prev{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-left.png') !important;
+      background-size: 100%;
+      left:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+  }
+  .session3{
+    width:228px;
+    height:240px;
+    background-color:rgba(102,195,195,1);
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+    border-radius:10px;
+    position: relative;
+    margin-top: 132px;
+    left: -131px;
+    background-image: url("http://pic.yupoo.com/pugbabu/9df8c0ba/bab7a97c.png");
+    background-size: 40px;
+    background-position: 36px 40px;
+    background-repeat: no-repeat;
+
+    .info{
+      position: absolute;
+      width:931px;
+      height:459px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+      box-sizing: border-box;
+      border-radius: 10px;
+      left: 105px;
+      top: 108px;
+      background: #fff;
+      .image{
+        width: 336px;
+        height: 459px;
+        background: url("http://pic.yupoo.com/pugbabu/c79fdbe8/8df1d3cc.jpg") no-repeat center;
+        background-size: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 459px;
+        border-radius: 10px;
+        
+      }
+      .detail{
+        width: 533px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 60px;
+        padding-right: 65px;
+        h3{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:48px;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("../../assets/image/home/text-icon.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 20px;
+        }
+        p{
+          margin-top: 36px;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(48,61,77,1);
+          line-height:30px;
+        }
+      }
+    }
+  }
+  .session4{
+    width:845px;
+    height:459px;
+    position: relative;
+    margin-top: 465px;
+    left: -30px;
+    .space-banner{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        background: #4B5964;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        line-height: 482px;
+      }
+     
+    }
+    .swiper-button-next{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-right.png') !important;
+      background-size: 100%;
+      right:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+    .swiper-button-prev{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-left.png') !important;
+      background-size: 100%;
+      left:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+  }
+  .session5{
+    width:989px;
+    height:510px;
+    background: #66C3C3;
+    box-shadow: -9px 56px 128px 0 rgba(0,0,0,0.27),-8px 77px 128px 0 rgba(0,0,0,0.22);
+    position: relative;
+    left: -67px;
+    margin-top: 136px;
+    border-radius: 10px;
+    opacity: 0.95;
+    .image{
+        width:562px;
+        height:445px;
+        position: absolute;
+        background: url("http://pic.yupoo.com/pugbabu/e9a3eb21/c3106526.jpg") no-repeat center;
+        background-size: 100% 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 445px;
+        border-radius: 10px;
+        top: 89px;
+        left: -65px;
+    }
+    .info{
+      width:482px;
+      height:419px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px rgba(0,0,0,0.28);
+      position: absolute;
+      right: 66px;
+      top: 188px;
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 45px;
+      h3{
+        font-size:23px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:38px;
+      }
+      .icon{
+           width: 72px;
+          height: 15px;
+          background: url("../../assets/image/home/text-icon.png") no-repeat center;
+          background-size: 100%;
+          margin: 0 auto;
+          margin-top: 20px;
+      }
+      p{
+        margin-top: 38px;
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(45,58,75,1);
+        line-height:30px;
+
+      }
+    }
+  }
+  .session6{
+    width:845px;
+    height:459px;
+    position: relative;
+    margin-top: 217px;
+    left: -30px;
+    .space-banner{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        background: #4B5964;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        line-height: 482px;
+      }
+     
+    }
+    .swiper-button-next{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-right.png') !important;
+      background-size: 100%;
+      right:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+    .swiper-button-prev{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-left.png') !important;
+      background-size: 100%;
+      left:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+  }
+  .session7{
+    width:989px;
+    height:527px;
+    position: relative;
+    margin-top: 178px;
+    left: -67px;
+    background: #66C3C3;
+    border-radius: 10px  0px  10px  10px  ;
+    opacity: 0.95;
+    box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0 rgba(0,0,0,0.22);
+    .info{
+      background: #fff;
+      width:916px;
+      height:428px;
+      position: absolute;
+      border-radius: 10px  0px  0px  10px  ;
+      left: -66px;
+      box-sizing: border-box;
+      padding-left: 41px;
+      padding-top: 43px;
+      box-sizing: border-box;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+      h3{
+        font-size:24px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:38px;
+      }
+      .icon{
+        width: 72px;
+        height: 15px;
+        background: url("../../assets/image/home/text-icon.png") no-repeat center;
+        background-size: 100%;
+        margin-top: 20px;
+      }
+      p{
+        margin-top: 38px;
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(45,58,75,1);
+        line-height:30px;
+      }
+
+    }
+    .image{
+      width:502px;
+      height:500px;
+      position: absolute;
+      background: #4B5964;
+      background: url("http://pic.yupoo.com/pugbabu/0ad8afe4/1000e5e6.jpg") no-repeat center;
+      background-size: 100% 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      line-height: 500px;
+      border-radius: 10px;
+      top: -36px;
+      right: -39px;
+    }
+  }
+  .session8{
+    width:845px;
+    height:459px;
+    position: relative;
+    margin-top: 129px;
+    left: -30px;
+    .space-banner{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        background: #4B5964;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        line-height: 482px;
+      }
+     
+    }
+    .swiper-button-next{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-right.png') !important;
+      background-size: 100%;
+      right:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+    .swiper-button-prev{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-left.png') !important;
+      background-size: 100%;
+      left:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+  }
+  .session9{
+    width:228px;
+    height:240px;
+    background:rgba(102,195,195,1);
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+    border-radius:10px;
+    position: relative;
+    left: -131px;
+    margin-top: 120px;
+    background-image: url("http://pic.yupoo.com/pugbabu/9df8c0ba/bab7a97c.png");
+    background-size: 40px;
+    background-position: 36px 40px;
+    background-repeat: no-repeat;
+    .info{
+      width:931px;
+      height:459px;
+      position: absolute;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+      left: 105px;
+      top: 108px;
+      .image{
+        width: 336px;
+        height: 459px;
+        background: #4B5964;
+        background: url("http://pic.yupoo.com/pugbabu/0d53ad3b/3b0cbab9.jpg") no-repeat center;
+      background-size: 100% 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 459px;
+        border-radius: 10px;
+      }
+      .detail{
+        width: 533px;
+        box-sizing: border-box;
+        height: 100%;
+        padding-top: 60px;
+        h3{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:48px;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("../../assets/image/home/text-icon.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 20px;
+        }
+        p{
+          margin-top: 38px;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(48,61,77,1);
+          line-height:30px;
+        }
+      }
+    }
+  }
+  .session10{
+    width:845px;
+    height:459px;
+    position: relative;
+    margin-top: 441px;
+    left: -30px;
+    .space-banner{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        background: #4B5964;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        line-height: 482px;
+      }
+     
+    }
+    .swiper-button-next{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-right.png') !important;
+      background-size: 100%;
+      right:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+    .swiper-button-prev{
+      width:48px;
+      height:48px;
+      background-image: url('../../assets/image/home/arrow-left.png') !important;
+      background-size: 100%;
+      left:-25px;
+      z-index: 9999 !important;
+      outline: none;
+    }
+  }
+
+
+
+}

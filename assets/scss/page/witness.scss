@@ -1,0 +1,189 @@
+.witness-container{
+  padding-bottom: 93px;
+  .session1{
+    width:228px;
+    height:240px;
+    background:rgba(204,73,66,1);
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+    border-radius:10px;
+    position: relative;
+    left: -20px;
+    margin-top: 82px;
+    background-image: url("http://pic.yupoo.com/pugbabu/f75ab24e/ec923fc4.png");
+    background-size: 40px;
+    background-position: 36px 40px;
+    background-repeat: no-repeat;
+    .red-heart{
+      position: absolute;
+      width: 360px;
+      height: 277px;
+      background: url("http://pic.yupoo.com/pugbabu/a7afa451/3bc649e5.png") no-repeat center;
+      background-size: 100% 100%;
+      top: 640px;
+      left: -115px;
+    }
+    .info{
+      position: absolute;
+      width:783px;
+      height:1001px;
+      box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0  rgba(0,0,0,0.22);
+      left: 114px;
+      top: 107px;
+      background: #fff;
+      opacity: 0.95;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding-left: 61px;
+      padding-top: 54px;
+      h2{
+        font-size:24px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:33px;
+        // animation: zoomIn 0.8s linear;   
+
+      }
+      .icon{
+        width: 72px;
+        height: 15px;
+        background: url("../../assets/image/home/text-icon.png") no-repeat center;
+        background-size: 100%;
+        margin-top: 20px;
+      }
+      .date{
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(233,83,106,1);
+        line-height:30px;
+        margin-top: 20px;
+      }
+      p{
+        width:618px;
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(45,58,75,1);
+        line-height:30px;
+        margin-top: 33px;
+      }
+
+    }
+  }
+  .session2{
+    width:228px;
+    height:240px;
+    background:rgba(233,83,106,1);
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+    border-radius:10px;
+    position: relative;
+    margin-top: 1010px;
+    left: 649px;
+    background-image: url("http://pic.yupoo.com/pugbabu/26e9ab31/85328c09.png");
+    background-size: 40px;
+    background-position: 146px 40px;
+    background-repeat: no-repeat;
+    .photo{
+      position: absolute;
+      width: 462px;
+      height: 528px;
+      background: url("http://pic.yupoo.com/pugbabu/38c70994/1cd88233.png") no-repeat center;
+      background-size: 100% 100%;
+      top: 854px;
+      left: -926px;
+    }
+    .info{
+      width:783px;
+      position: absolute;
+      box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0  rgba(0,0,0,0.22);
+      background: #fff;
+      opacity: 0.95;
+      border-radius: 10px;
+      box-sizing: border-box;
+      height:1461px;
+      padding-left: 84px;
+      padding-top: 54px;
+      right: 114px;
+      top: 107px;
+      h2{
+        font-size:24px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:33px;
+      }
+      .icon{
+        width: 72px;
+        height: 15px;
+        background: url("../../assets/image/home/text-icon.png") no-repeat center;
+        background-size: 100%;
+        margin-top: 20px;
+      }
+      .date{
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(233,83,106,1);
+        line-height:30px;
+        margin-top: 20px;
+      }
+      .words{
+        p{
+          width:618px;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+        }
+        .item{
+          margin-top: 30px;
+          .xingxing{
+            background: url("../../assets/image/xingxing.png") no-repeat center;
+            background-size: 100%;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .session3{
+    font-size:24px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(233,83,106,1);
+    line-height:33px;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 1431px;
+    height: 33px;
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

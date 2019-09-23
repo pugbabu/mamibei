@@ -20,3 +20,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## 发布注意点
+news和article两个组件里的接口修改serverHost

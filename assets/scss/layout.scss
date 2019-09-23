@@ -84,3 +84,73 @@ img[lazy=error] {
   background: #eb5168 !important;
   border: none;
 }
+.my-pagination-clickable1 span[role=button]{
+  border: none;
+  outline: none;
+
+}
+.my-bullet1{
+  display: inline-block;
+  width:  10px !important;
+  height:  10px !important;
+  margin-right: 5px !important;
+  background:  #fff !important;
+  border-radius:  50%;
+  cursor:  pointer;
+}
+.my-bullet-active1{
+  background: #eb5168 !important;
+  border: none;
+}
+.image{
+  transition: all 0.5s;
+  position: relative;
+}
+.image:hover{
+  transform: translateY(-6px);
+}
+.vue-video .video-sub-controller{
+  background:#000 !important;
+  box-shadow: -5px 29px 66px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+ 
+
+
+}
+.button-container .button{
+  left: 50% !important;
+  transform: translate3d(-50%,-50%,0) !important;
+}
+.circle-wrapper{
+  width: 136px;
+  height: 135px;
+  svg{
+    width: 136px;
+    height: 135px;
+  }
+  .circles-text{
+    display: none;
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

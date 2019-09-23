@@ -5,7 +5,7 @@ const { Nuxt, Builder } = require('nuxt')
 
 const app = new Koa()
 const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 4000
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')

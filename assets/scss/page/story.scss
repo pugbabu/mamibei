@@ -1,0 +1,475 @@
+.story-container{
+  padding-bottom: 240px;
+  .session1{
+    width:783px;
+    height:498px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -5px 29px 66px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+    position: relative;
+    left: 94px;
+    margin-top: 86px;
+    padding-left: 61px;
+    box-sizing: border-box;
+    padding-top: 34px;
+    h2{
+      font-size:24px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(233,83,106,1);
+      line-height:33px;
+      // animation: zoomIn 0.8s linear;   
+
+    }
+    .icon{
+      width: 72px;
+      height: 15px;
+      background: url("../../assets/image/home/text-icon.png") no-repeat center;
+      background-size: 100%;
+      margin-top: 20px;
+    }
+    h3{
+      font-size:18px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(233,83,106,1);
+      line-height:30px;
+      margin-top: 25px;
+    }
+    p{
+      font-size:18px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(45,58,75,1);
+      line-height:30px;
+      margin-top: 22px;
+      width: 618px;
+    }
+  }
+  .session-video{
+    width: 900px;
+    height: 500px;
+    left: -58px;
+    margin-top: 100px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    // box-shadow: -5px 10px 30px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+    // box-shadow: -5px 29px 66px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+
+
+    #leader_video{
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    box-shadow: -5px 29px 66px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+
+
+    }
+  }
+  .session2{
+    width:228px;
+    height:240px;
+    background:rgba(204,73,66,1);
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+    border-radius:10px;
+    position: relative;
+    margin-top: 161px;
+    left: 676px;
+    background-image: url("http://pic.yupoo.com/pugbabu/3bdc74b8/7d1bce8e.png");
+    background-size: 40px;
+    background-position: 146px 40px;
+    background-repeat: no-repeat;
+    .info{
+      position: absolute;
+      width:931px;
+      height:509px;
+      border-radius: 10px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.27);
+      right: 105px;
+      top: 80px;
+      background: #fff;
+      padding-left: 40px;
+      .detail{
+        width: 510px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 52px;
+        h2{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:33px;
+
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/ecacf1ea/f1b5da05.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 20px;
+        }
+        h3{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          line-height:30px;
+          margin-top: 30px;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+          margin-top: 22px;
+        }
+      }
+      .image{
+        height: 100%;
+        width: calc(100% - 595px);
+        font-size: 50px;
+        background: url("http://pic.yupoo.com/pugbabu/d37b85cb/109ca683.jpg") no-repeat center;
+        background-size: auto 100%; 
+        // border-top-left-radius: 10px;
+        // border-bottom-left-radius: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .session3{
+    position: relative;
+    left: -49px;
+    width:884px;
+    height:486px;
+    border-radius:10px;
+    opacity:0.95;
+    margin-top: 461px;
+    box-shadow:-5px 29px 66px 0px rgba(0,0,0,0.27),-4px 40px 66px 0px rgba(0,0,0,0.22);
+    background: url("http://pic.yupoo.com/pugbabu/566e0da7/4950f900.png") no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 186px;
+    box-sizing: border-box;
+    .shop-list{
+      margin-left: 593px;
+      li{
+        
+        margin-bottom: 13px;
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          line-height:30px;
+          margin-left: 35px;
+          position: relative;
+          top: 3px;
+        }
+        // .circle{
+        //   width:14px;
+        //   height:14px;
+        //   box-shadow:0px 20px 20px 0px rgba(0,0,0,0.2);
+        //   border-radius: 50%;
+        //   background: #fff;
+        //   margin-right: 18px;
+        //   margin-top: 8px;
+        // }
+      }
+    }
+  }
+  .session4{
+    width:989px;
+    height:941px;
+    background: #E9536A;
+    margin-top: 226px;
+    position: relative;
+    left: -67px;
+    border-radius: 10px;
+    box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0 rgba(0,0,0,0.22);
+    .logo{
+      background: url('../../assets/image/logo.png') no-repeat center;
+      background-size:100%;
+      width: 69px;
+      height: 64px;
+      position: absolute;
+      right: 64px;
+      top: 51px;
+    }
+    .info{
+      width:916px;
+      height:941px;
+      position: absolute;
+      left: -65px;
+      top: -107px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.27);
+      padding-top: 87px;
+      box-sizing: border-box;
+      .wrapper{
+        padding: 0 75px;
+        h2{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:38px;
+          text-align: center;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("../../assets/image/home/text-icon.png") no-repeat center;
+          background-size: 100%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+        h3{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          line-height:30px;
+          margin-top: 30px;
+          text-align: center;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+          margin-top: 27px;
+        }
+
+      }
+      .wrapper1{
+        padding: 0 87px;
+        margin-bottom: 88px;
+      }
+    }
+    
+  }
+  .session5{
+    width:956px;
+    height:510px;
+    background: #CC4942;
+    opacity: 0.95;
+    border-radius: 10px;
+    position: relative;
+    left: -36px;
+    margin-top: 217px;
+    box-shadow: -9px 56px 128px 0 rgba(0,0,0,0.27),-8px 77px 128px 0 rgba(0,0,0,0.22);
+    .info{
+      width:889px;
+      height:413px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 24px 31px 66px 0 rgba(0,0,0,0.22),-2px 39px 66px 0 rgba(0,0,0,0.27);
+      position: absolute;
+      left: -30px;
+      top: -112px;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 41px;
+      h2{
+        font-size:24px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(233,83,106,1);
+        line-height:38px;
+      }
+      .icon{
+        width: 72px;
+        height: 15px;
+        background: url("../../assets/image/home/text-icon.png") no-repeat center;
+        background-size: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      h3{
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(233,83,106,1);
+        line-height:30px;
+        margin-top: 20px;
+      }
+      p{
+        padding: 0 65px 0 57px;
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(45,58,75,1);
+        line-height:30px;
+      }
+
+    }
+    .image{
+      width:889px;
+      height:426px;
+      position: absolute;
+      top: 191px;
+      left: -94px;
+      background: #4B5964;
+      background: url("http://pic.yupoo.com/pugbabu/2c69d0d1/aed039ed.jpg") no-repeat center;
+      background-size: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      line-height: 426px;
+      border-radius: 10px;
+    }
+
+  }
+  .session6{
+    width:884px;
+    height:662px;
+    background:rgba(233,83,106,1) linear-gradient(191deg,rgba(255,255,255,0.15) 0%,rgba(34,37,40,0.15) 100%);
+    box-shadow:-9px 56px 128px 0px rgba(0,0,0,0.27),-8px 77px 128px 0px rgba(0,0,0,0.22);
+    border-radius:10px;
+    opacity:0.95;
+    position: relative;
+    margin-top: 213px;
+    left: -54px;
+    box-sizing: border-box;
+    padding-top: 69px;
+    h2{
+      font-size:24px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      line-height:33px;
+      text-align: center;
+    }
+    h3{
+      font-size:24px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:33px;
+      text-align: center;
+      margin-top: 29px;
+      span{
+        margin: 0 25px;
+      }
+      .icon{
+        display: inline-block;
+        width: 72px;
+        height: 15px;
+        background: url("http://pic.yupoo.com/pugbabu/60c2018b/0736f6d3.png") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .list{
+      box-sizing: border-box;
+      padding-left: 94px;
+      margin-top: 65px;
+      li{
+        margin-bottom: 44px;
+        .circle{
+          width:14px;
+          height:14px;
+          background:rgba(255,255,255,0.9);
+          box-shadow:0px 20px 20px 0px rgba(0,0,0,0.2);
+          border-radius: 50%;
+          position: relative;
+          top: 23px;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(255,255,255,1);
+          line-height:30px;
+          margin-left: 77px;
+
+        }
+      }
+    }
+  }
+  .session7{
+    width:884px;
+    height:466px;
+    background:rgba(204,73,66,1) linear-gradient(191deg,rgba(255,255,255,0.15) 0%,rgba(34,37,40,0.15) 100%);
+    box-shadow:-9px 56px 128px 0px rgba(0,0,0,0.27),-8px 77px 128px 0px rgba(0,0,0,0.22);
+    border-radius:10px;
+    opacity:0.95;
+    position: relative;
+    left: -54px;
+    margin-top: 53px;
+    box-sizing: border-box;
+    padding-top: 57px;
+    h3{
+      font-size:24px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:33px;
+      text-align: center;
+      .icon{
+        display: inline-block;
+        width: 72px;
+        height: 15px;
+        background: url("http://pic.yupoo.com/pugbabu/60c2018b/0736f6d3.png") no-repeat center;
+        background-size: 100%;
+      }
+      span{
+        margin: 0 25px;
+      }
+    }
+    .list{
+      box-sizing: border-box;
+      padding-left: 94px;
+      margin-top: 62px;
+      li{
+        margin-bottom: 44px;
+        .circle{
+          width:14px;
+          height:14px;
+          background:rgba(255,255,255,0.9);
+          box-shadow:0px 20px 20px 0px rgba(0,0,0,0.2);
+          border-radius: 50%;
+          position: relative;
+          top: 23px;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(255,255,255,1);
+          line-height:30px;
+          margin-left: 77px;
+
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

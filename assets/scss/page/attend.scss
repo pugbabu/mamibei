@@ -1,0 +1,668 @@
+.banner-box{
+  width: 100%;
+  height: 900px;
+  text-align: center;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16),0 5px 10px 0 rgba(0, 0, 0, 0.14);
+}
+// 轮播上的文字
+.banner-text{
+  width: 1380px;
+  position: absolute;
+  top: 346px;
+  padding-left: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2D3A4B;
+  z-index: 101;
+  box-sizing: border-box;
+  h1{
+   font-size:48px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(45,58,75,1);
+    line-height:64px;
+  }
+  p{
+    margin-top: 14px;
+    width:567px;
+    font-size:21px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(45,58,75,1);
+    line-height:32px;
+  }
+}
+
+.content{
+  // height: 5951px;
+  // .rope-bottom{
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: 0;
+  // }
+  .main{
+    // height: 5666px;
+    padding-top: 125px;
+    padding-bottom: 219px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    .session1{
+      width:989px;
+      height:527px;
+      background: #E9536A;
+      position: relative;
+      border-radius: 10px  0px  10px  10px;
+      left: -67px;
+      box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0 rgba(0,0,0,0.22);
+      .info{
+        width:916px;
+        height:428px;
+        position: absolute;
+        left: -66px;
+        top: 0;
+        background: #fff;
+        box-sizing: border-box;
+        padding-left: 41px;
+        padding-top: 43px;
+        border-radius: 10px  0px  0px  10px;
+        box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+        h3{
+          // width:207px;
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:38px;
+          animation: zoomIn 0.8s linear;   
+
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/f42d10ea/208d0d81.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+        }
+      }
+      .image{
+        width:502px;
+        height:500px;
+        border-radius:10px;
+        position: absolute;
+        right: -39px;
+        top: -35px;
+        background: #4B5964;
+        background: url("http://pic.yupoo.com/pugbabu/fbaee5db/b1a24ffa.jpeg") no-repeat center;
+        background-size: auto 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 500px;
+      }
+    }
+    .session2{
+      width:228px;
+      height:240px;
+      background-color:rgba(92,183,183,1);
+      box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+      border-radius:10px;
+      margin-top: 165px;
+      margin-left: -131px;
+      position: relative;
+      background-image: url("http://pic.yupoo.com/pugbabu/9df8c0ba/bab7a97c.png");
+      background-size: 40px;
+      background-position: 36px 40px;
+      background-repeat: no-repeat;
+
+      .info{
+        width:931px;
+        height:459px;
+        border-radius: 10px;
+        position: absolute;
+        left: 105px;
+        top: 108px;
+        background: #fff;
+        padding-left: 437px;
+        box-sizing: border-box;
+        box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+        background: #fff url("http://pic.yupoo.com/pugbabu/8acbb2c9/1786483e.jpg") no-repeat;
+        background-size: 336px 459px;
+        h3{
+          margin-top: 65px;
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,83,106,1);
+          line-height:48px;
+        }
+        p{
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(48,61,77,1);
+          line-height:30px;
+          margin-top: 35px;
+        }
+        .words{
+          margin-top: 37px;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(48,61,77,1);
+          line-height:30px;
+          position: relative;
+          .line{
+            width:108px;
+            height:7px;
+            background:rgba(94,185,185,1);
+            position: absolute;
+            left: -134px;
+            top: 50%;
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+    .session3{
+      width:893px;
+      height:405px;
+      position: relative;
+      margin-top: 472px;
+      background: #E9536A;
+      border-radius: 10px;
+      left: -52px;
+      padding-top: 42px;
+      box-sizing: border-box;
+      h3{
+        font-size:23px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:38px;
+        text-align: center;
+      }
+      .title{
+        margin-top: 22px;
+        text-align: center;
+        height: 30px;
+        font-size:14px;
+        font-family:PingFangTC-Regular;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:30px;
+        .text{
+          margin: 0 15px;
+        }
+        .icon {
+          display: inline-block;
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/040669c0/34d117c2.png") no-repeat center;
+          background-size: 100%;
+          position: relative;
+          top: 3px;
+        }
+      }
+      .service-list{
+        width: 1045px;
+        height: 248px;
+        position: relative;
+        left: -79px;
+        margin-top: 36px;
+      }
+      .swiper-slide{
+        width: 100%;
+        .item{
+          float: left;
+          width:320px;
+          height:107px;
+          line-height: 107px;
+          background:rgba(255,255,255,1);
+          border-radius:10px;
+          font-size:16px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          margin-right: 40px;
+          margin-bottom: 34px;
+          text-align: center;
+        }
+        .item-no-margin{
+          margin-right: 0;
+        }
+
+      }
+    }
+
+    .session4{
+      width:893px;
+      height:413px;
+      margin-top: 178px;
+      position: relative;
+      background: #E9536A;
+      border-radius: 10px;
+      left: -52px;
+      padding-top: 32px;
+      box-sizing: border-box;
+      .title{
+        text-align: center;
+        height: 30px;
+        font-size:14px;
+        font-family:PingFangTC-Regular;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:30px;
+         .text{
+          margin: 0 15px;
+        }
+        .icon {
+          display: inline-block;
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/040669c0/34d117c2.png") no-repeat center;
+          background-size: 100%;
+          position: relative;
+          top: 3px;
+        }
+      }
+      .service-list{
+        width: 1045px;
+        height: 248px;
+        position: relative;
+        left: -79px;
+        margin-top: 41px;
+      }
+      .swiper-slide{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        .item{
+          float: left;
+          width:320px;
+          height:107px;
+          line-height: 107px;
+          background:rgba(255,255,255,1);
+          border-radius:10px;
+          font-size:16px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          margin-right: 40px;
+          margin-bottom: 34px;
+          text-align: center;
+          
+        
+        }
+        .item-no-margin{
+          margin-right: 0;
+        }
+
+      }
+    }
+    .session5{
+      width:989px;
+      height:510px;
+      background: #66C3C3;
+      margin-top: 163px;
+      position: relative;
+      left: -133px;
+      border-radius: 10px;
+      box-shadow: -9px 56px 128px 0 rgba(0,0,0,0.27),-8px 77px 128px 0 rgba(0,0,0,0.22);
+      .image{
+        width:815px;
+        height:445px;
+        position: absolute;
+        border-radius: 10px;
+        background: url("http://pic.yupoo.com/pugbabu/63698342/92ba59ee.jpg") no-repeat center;
+        background-size: 100%;
+        top: 89px;
+        right: -65px;
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+        line-height: 445px;
+      }
+      .info{
+        width:467px;
+        height:413px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        left: 64px;
+        bottom: -91px;
+        box-sizing: border-box;
+        padding-top: 46px;
+        text-align: center;
+        box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22),-3px 40px 66px 0 rgba(0,0,0,0.28);
+        h3{
+          font-size:23px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          line-height:38px;
+        }
+        .title{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(45,58,75,1);
+          line-height:31px;
+          margin-top: 27px;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/f42d10ea/208d0d81.png") no-repeat center;
+          background-size: 100%;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        p{
+          text-align: center;
+          // width:236px;
+          // margin: 0 auto;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+          margin-top: 15px;
+        }
+      }
+    }
+    .session6{
+      width:884px;
+      height:466px;
+      background:rgba(233,83,106,0.95);
+      box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+      border-radius:10px;
+      position: relative;
+      margin-top: 221px;
+      left: -49px;
+      .image{
+        position: absolute;
+        left: 50%;
+        top: 52%;
+        background: url("http://pic.yupoo.com/pugbabu/2a0dc45d/a9814e5b.png") no-repeat center;
+        width: 284px;
+        height: 316px;
+        background-size: 100% 100%;
+        border-radius: 50%;
+        transform: translate3d(-50%,-50%,0);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+      }
+      p{
+        font-size:18px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:30px;
+        position: absolute;
+      }
+      p:nth-child(1){
+        width: 100%;
+        top: 48px;
+        text-align: center;
+      }
+      p:nth-child(2){
+        width:158px;
+        top: 136px;
+        left: 126px;
+      }
+      p:nth-child(3){
+        width:193px;
+        top: 271px;
+        left: 76px;
+        text-align: right;
+      }
+      p:nth-child(4){
+        width:110px;
+        top: 136px;
+        right: 153px;
+        text-align: left;
+      }
+      p:nth-child(5){
+        width:110px;
+        top: 271px;
+        right: 153px;
+        text-align: left;
+      }
+      p:nth-child(6){
+        top: 364px;
+        width: 100%;
+        text-align: center;
+
+      }
+    }
+    .session7{
+      width:989px;
+      height:510px;
+      position: relative;
+      left: -67px;
+      margin-top: 110px;
+      border-radius: 10px;
+      background: #66C3C3;
+      box-shadow: -9px 56px 128px 0 rgba(0,0,0,0.27),-8px 77px 128px 0 rgba(0,0,0,0.22);
+      .image{
+        background: url("http://pic.yupoo.com/pugbabu/c521d275/6b13a1ac.jpeg") no-repeat center;
+        background-size: 100%;
+        width:562px;
+        height:445px;
+        border-radius: 10px;
+        top: 89px;
+        left: -65px;
+        position: absolute;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        line-height: 445px;
+      }
+      .info{
+        width:467px;
+        height:413px;
+        position: absolute;
+        background: #fff;
+        border-radius: 10px;
+        right: 73px;
+        top: 188px;
+        text-align: center;
+        box-shadow: 25px 32px 66px 0 rgba(0,0,0,0.22), -3px 40px 66px 0 rgba(0,0,0,0.28);
+
+        h3{
+          font-size:23px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(233,83,106,1);
+          line-height:38px;
+          margin-top: 46px;
+        }
+        .title{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(45,58,75,1);
+          line-height:31px;
+          margin-top: 27px;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/f42d10ea/208d0d81.png") no-repeat center;
+          background-size: 100%;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        p{
+          text-align: left;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+          margin-top: 15px;
+          text-align: center;
+        }
+      }
+    }
+    .session8{
+      width:884px;
+      height:466px;
+      background:rgba(233,83,106,0.95);
+      box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+      border-radius:10px;
+      position: relative;
+      margin-top: 191px;
+      left: -49px;
+      .image{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url("http://pic.yupoo.com/pugbabu/1bcdc2f4/75692297.png") no-repeat center;
+        background-size: 100%;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        transform: translate3d(-50%,-50%,0);
+        text-align: center;
+        line-height: 260px;
+        color: #fff;
+        font-size: 30px;
+      }
+      p{
+        font-size:18px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:30px;
+        position: absolute;
+      }
+      p:nth-child(1){
+        width:219px;
+        top: 136px;
+        left: 68px;
+        text-align: right;
+      }
+      p:nth-child(2){
+        width:158px;
+        top: 271px;
+        left: 137px;
+        text-align: right;
+      }
+      p:nth-child(3){
+        width:267px;
+        top: 136px;
+        right: 20px;
+        text-align: left;
+      }
+      p:nth-child(4){
+        width:219px;
+        top: 271px;
+        right: 65px;
+        text-align: left;
+      }
+    }
+    .session9{
+      width:884px;
+      height:466px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 8px 0px rgba(0,0,0,0.18),0px 2px 6px 0px rgba(0,0,0,0.16),0px 5px 10px 0px rgba(0,0,0,0.14);
+      border-radius:10px;
+      position: relative;
+      margin-top: 127px;
+      left: -50px;
+      .info{
+        background: #fff;
+        height: 100%;
+        width: 526px;
+        float: left;
+        box-sizing: border-box;
+        padding-left: 55px;
+        h3{
+          font-size:24px;
+          font-family:PingFangSC-Medium;
+          font-weight:500;
+          color:rgba(233,89,111,1);
+          line-height:38px;
+          margin-top: 51px;
+        }
+        .icon{
+          width: 72px;
+          height: 15px;
+          background: url("http://pic.yupoo.com/pugbabu/f42d10ea/208d0d81.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 20px;
+        }
+        p{
+          text-align: left;
+          font-size:18px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(45,58,75,1);
+          line-height:30px;
+          margin-top: 38px;
+        }
+
+      }
+      .image{
+        width: 358px;
+        height: 100%;
+        background: url("http://pic.yupoo.com/pugbabu/14ba82f0/4a72e9ba.jpg") no-repeat center;
+        background-size: auto 100%;
+        font-size: 50px;
+        text-align: center;
+        line-height: 466px;
+        float: left;
+        border-radius: 10px;
+      }
+    }
+    .session10{
+      width:989px;
+      height:431px;
+      position: relative;
+      left: -67px;
+      margin-top: 199px;
+      background: #E9596F;
+      border-radius: 10px;
+      box-shadow: -5px 29px 66px 0 rgba(0,0,0,0.27),-4px 40px 66px 0 rgba(0,0,0,0.22);
+      .image{
+        width:915px;
+        height:428px;
+        background: url("http://pic.yupoo.com/pugbabu/787dfff4/f9b7ab51.jpg") no-repeat center;
+        background-size: 100%;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 428px;
+        font-size: 50px;
+        position: absolute;
+        left: -65px;
+        top: -74px;
+      }
+      p{
+        height:25px;
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:25px;
+        position: absolute;
+        right: 62px;
+        top: 380px;
+      }
+    }
+  }
+
+}

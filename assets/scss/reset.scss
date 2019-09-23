@@ -20,6 +20,7 @@ body{
   width: 100%;
   overflow-x: hidden;
   user-select: none;
+  scroll-behavior:smooth
 }
 
 img, article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
@@ -40,6 +41,11 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 /* 浮动 */
 .fl {
